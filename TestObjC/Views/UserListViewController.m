@@ -8,6 +8,7 @@
 #import "UserListViewController.h"
 #import "UserListViewModel.h"
 #import "UserTableViewCell.h"
+#import "UserDetailViewController.h"
 
 @interface UserListViewController () <UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate>
 
@@ -23,7 +24,8 @@
     [super viewDidLoad];
     
     self.viewModel = [[UserListViewModel alloc] init];
-    
+    self.title = @"User Lists";
+
     [self setupSearchBar];
     [self setupTableView];
     
@@ -64,6 +66,15 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 80.0;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    UserModel *user = [self.viewModel userAtIndex:indexPath.row];
+    UserDetailViewController *detailVC = [[UserDetailViewController alloc] initWithUser:user];
+    
+    [self.navigationController pushViewController:detailVC animated:YES];
 }
 
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {

@@ -23,6 +23,8 @@
 		A7901D992DACBCDC008320E0 /* UserListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7901D972DACBCDB008320E0 /* UserListViewController.xib */; };
 		A7901D9C2DACBCEB008320E0 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A7901D9B2DACBCEB008320E0 /* UserModel.m */; };
 		A7901DA12DACBD30008320E0 /* UserTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7901D9F2DACBD30008320E0 /* UserTableViewCell.m */; };
+		A7901DA72DACCD21008320E0 /* UserDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7901DA52DACCD21008320E0 /* UserDetailViewController.m */; };
+		A7901DA82DACCD21008320E0 /* UserDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7901DA62DACCD21008320E0 /* UserDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,9 @@
 		A7901D9B2DACBCEB008320E0 /* UserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
 		A7901D9E2DACBD30008320E0 /* UserTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserTableViewCell.h; sourceTree = "<group>"; };
 		A7901D9F2DACBD30008320E0 /* UserTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserTableViewCell.m; sourceTree = "<group>"; };
+		A7901DA42DACCD21008320E0 /* UserDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserDetailViewController.h; sourceTree = "<group>"; };
+		A7901DA52DACCD21008320E0 /* UserDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserDetailViewController.m; sourceTree = "<group>"; };
+		A7901DA62DACCD21008320E0 /* UserDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +189,7 @@
 		A7901D902DACAE06008320E0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A7901DA32DACCD02008320E0 /* UserDetailViewController */,
 				A7901D9D2DACBD1B008320E0 /* UserCell */,
 				A7901D952DACBCDB008320E0 /* UserListViewController.h */,
 				A7901D962DACBCDB008320E0 /* UserListViewController.m */,
@@ -208,6 +214,16 @@
 				A7901D9F2DACBD30008320E0 /* UserTableViewCell.m */,
 			);
 			path = UserCell;
+			sourceTree = "<group>";
+		};
+		A7901DA32DACCD02008320E0 /* UserDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A7901DA42DACCD21008320E0 /* UserDetailViewController.h */,
+				A7901DA52DACCD21008320E0 /* UserDetailViewController.m */,
+				A7901DA62DACCD21008320E0 /* UserDetailViewController.xib */,
+			);
+			path = UserDetailViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7901D682DACAD63008320E0 /* LaunchScreen.storyboard in Resources */,
+				A7901DA82DACCD21008320E0 /* UserDetailViewController.xib in Resources */,
 				A7901D992DACBCDC008320E0 /* UserListViewController.xib in Resources */,
 				A7901D652DACAD63008320E0 /* Assets.xcassets in Resources */,
 				A7901D602DACAD61008320E0 /* Main.storyboard in Resources */,
@@ -349,6 +366,7 @@
 				A7901D5A2DACAD61008320E0 /* SceneDelegate.m in Sources */,
 				A7901D632DACAD61008320E0 /* TestObjC.xcdatamodeld in Sources */,
 				A7901D9C2DACBCEB008320E0 /* UserModel.m in Sources */,
+				A7901DA72DACCD21008320E0 /* UserDetailViewController.m in Sources */,
 				A7901D982DACBCDC008320E0 /* UserListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
